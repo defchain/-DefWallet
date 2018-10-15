@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="170dp"
+    android:background="@drawable/shape_dialog"
+    android:minHeight="170dp">
+
+    <TextView
+        android:id="@+id/tv_export_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="@string/export_private_key"
+        android:textColor="@color/receive_wallet_name"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_export_key_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_export_key"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="7dp"
+        android:gravity="center"
+        android:text="@string/export_private_desc"
+        android:textColor="@color/bottom_gray"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_private_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_export_key_desc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="7dp"
+        android:gravity="center"
+        android:textColor="@color/bottom_gray"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/btn_copy"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        android:background="@drawable/shape_button"
+        android:text="@string/copy"
+        android:textColor="@color/white" />
+</RelativeLayout>

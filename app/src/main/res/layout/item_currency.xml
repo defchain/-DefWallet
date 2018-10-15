@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="67dp"
+    android:background="@color/white"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:minHeight="67dp">
+
+
+    <ImageView
+        android:id="@+id/img_currency_icon"
+        android:layout_width="@dimen/assets_icon"
+        android:layout_height="@dimen/assets_icon"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/default_padding_left_right" />
+
+    <TextView
+        android:id="@+id/tv_currency_name"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/img_currency_icon"
+        android:gravity="center_vertical"
+        android:textColor="@color/titlebarcolor"
+        android:textSize="@dimen/digital_name_size" />
+
+    <TextView
+        android:id="@+id/tv_currency_assets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/default_padding_left_right"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/titlebarcolor"
+        android:textSize="@dimen/digital_name_size" />
+
+    <TextView
+        android:id="@+id/tv_currency_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/default_padding_left_right"
+        android:layout_marginTop="38dp"
+        android:textColor="@color/bottom_gray"
+        android:textSize="@dimen/total_assets_text" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/default_padding_left_right"
+        android:layout_marginRight="@dimen/default_padding_left_right"
+        android:background="@color/gray_bg" />
+
+
+</RelativeLayout>

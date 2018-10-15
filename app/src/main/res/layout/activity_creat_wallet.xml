@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_cretae_wallet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_creat_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/titlebarcolor"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/create_wallet"
+            android:textColor="@color/white"
+            android:textSize="@dimen/toolbar_text_size" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/toolbar_height">
+
+        <RelativeLayout
+            android:id="@+id/rl_cretae_wallet_down"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--wallet name-->
+            <TextView
+                android:id="@+id/tv_wallet_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/wallet_name"
+                android:textColor="@color/bottom_gray"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edt_wallet_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tv_wallet_name"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="@string/input_wallet_name"
+                android:inputType="textMultiLine"
+                android:textColorHint="@color/edt_hint"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/edt_wallet_name"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@color/gray_bg" />
+
+            <!--password-->
+            <TextView
+                android:id="@+id/tv_cretea_wallet_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_wallet_name"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/password"
+                android:textColor="@color/bottom_gray"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edt_cretea_wallet_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tv_cretea_wallet_password"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="@string/input_password"
+                android:inputType="textMultiLine"
+                android:textColorHint="@color/edt_hint"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/img_password_ciphertext"
+                android:layout_width="@dimen/edit_img"
+                android:layout_height="@dimen/edit_img"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_cretea_wallet_password"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="@dimen/edit_img_margin_top"
+                android:scaleType="fitXY"
+                android:src="@drawable/eye_close" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/edt_cretea_wallet_password"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@color/gray_bg" />
+
+            <!--repassword-->
+            <TextView
+                android:id="@+id/tv_cretea_wallet_repassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_cretea_wallet_password"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/confirm_password"
+                android:textColor="@color/bottom_gray"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edt_cretea_wallet_repassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tv_cretea_wallet_repassword"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="@string/input_password_again"
+                android:inputType="textMultiLine"
+                android:textColorHint="@color/edt_hint"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/img_repassword_ciphertext"
+                android:layout_width="@dimen/edit_img"
+                android:layout_height="@dimen/edit_img"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_cretea_wallet_repassword"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="@dimen/edit_img_margin_top"
+                android:scaleType="fitXY"
+                android:src="@drawable/eye_close" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/edt_cretea_wallet_repassword"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@color/gray_bg" />
+
+            <!--&lt;!&ndash;password hint&ndash;&gt;-->
+            <!--<TextView-->
+            <!--android:id="@+id/tv_password_hint"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/edt_cretea_wallet_repassword"-->
+            <!--android:layout_marginLeft="14dp"-->
+            <!--android:layout_marginRight="14dp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:text="@string/password_hint"-->
+            <!--android:textColor="@color/bottom_gray"-->
+            <!--android:textSize="12sp" />-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/edt_password_hint"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_below="@+id/tv_password_hint"-->
+            <!--android:layout_marginLeft="14dp"-->
+            <!--android:layout_marginRight="14dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:background="@null"-->
+            <!--android:gravity="top"-->
+            <!--android:hint="@string/input_password_hint"-->
+            <!--android:inputType="textMultiLine"-->
+            <!--android:textColorHint="@color/edt_hint"-->
+            <!--android:textSize="14sp" />-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_below="@+id/edt_password_hint"-->
+            <!--android:layout_marginLeft="14dp"-->
+            <!--android:layout_marginRight="14dp"-->
+            <!--android:background="@color/gray_bg" />-->
+
+            <Button
+                android:id="@+id/btn_star_creat"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_below="@+id/edt_cretea_wallet_repassword"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/shape_button3"
+                android:text="@string/create_wallet"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

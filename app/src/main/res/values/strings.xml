@@ -1,0 +1,234 @@
+<resources>
+    <string name="app_name">DEF钱包</string>
+
+    <string name="create_wallet">创建钱包</string>
+    <string name="import_wallet">导入钱包</string>
+    <string name="assets">资产</string>
+    <string name="quotation">行情</string>
+    <string name="main">我的</string>
+    <string name="total_assets">总资产(%1$s)</string>
+    <string name="deflogo">DEF钱包正在守护您的资产</string>
+    <string name="wallet_management">钱包管理</string>
+    <string name="transaction_record">交易明细</string>
+    <string name="setting">设置</string>
+    <string name="mnemonic">助记词</string>
+    <string name="keystore">keystore</string>
+    <string name="private_key">私钥</string>
+    <string name="input_mnemonic">请按正确的顺序输入助记词，单词间用空格隔开</string>
+    <string name="ok">确认</string>
+    <string name="cancel">取消</string>
+    <string name="next">下一步</string>
+    <string name="scan">扫一扫</string>
+    <string name="function_unopened">即将支持此功能</string>
+    <string name="please_wait">请稍后...</string>
+    <string name="no_permission">权限被拒绝无法启动该功能</string>
+    <string name="usd_symbol">$</string>
+    <string name="rmb_symbol">¥</string>
+    <string name="approximate_symbol">≈</string>
+    <string name="add_assets">+添加资产</string>
+    <string name="add_assets_s">添加资产</string>
+    <string name="search">搜索</string>
+    <string name="about">关于</string>
+    <string name="no_copy">当前钱包未备份，请尽快备份确保安全 ></string>
+    <string name="exit">再按一退出程序</string>
+    <string name="no_internet">您的网络不太给力，请稍后再试。</string>
+    <string name="internet_bad">网络信号差</string>
+
+    <!--import wallet-->
+    <string name="path">路径</string>
+    <string name="password">密码（6～16位大小写字母和数字）</string>
+    <string name="input_password">请输入密码</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="input_password_again">请再次输入密码</string>
+    <!--<string name="password_hint">密码提示（选填）</string>-->
+    <!--<string name="input_hint">请输入密码提示信息</string>-->
+    <string name="import_now">立即导入</string>
+    <string name="importing">正在导入钱包，请稍等...</string>
+    <string name="import_fail">导入钱包失败</string>
+    <string name="import_has_same_name">此钱包名称已被使用</string>
+    <string name="create_has_same_name">此钱包名称已被使用</string>
+    <string name="modify_has_same_name">此钱包名称已被使用</string>
+    <string name="has_same_wallet">钱包已经存在，导入失败。</string>
+
+    <string name="input_keystore">请填入Keystore</string>
+    <string name="keystore_password">Keystore密码</string>
+    <string name="input_keystore_password">请输入Keystore密码</string>
+
+    <string name="input_private_key">请输入私钥</string>
+    <string name="input_private_password">请输入一个新密码</string>
+
+    <string name="path_item1">m/44\'/60\'/0\'/0/0 Jaxx,Matamask(ETH)</string>
+    <string name="path_item2">m/44\'/60\'/0/0 Ledger(ETH)</string>
+    <string name="path_item3">m/44\'/60\'/1\'/0/0 自定义路径</string>
+
+    <!--create wallet-->
+    <string name="wallet_name">钱包名称(2～20个字符)</string>
+    <string name="input_wallet_name">输入钱包名称不超过20个字</string>
+    <string name="password_hint">密码提示（选填）</string>
+    <string name="input_password_hint">请输入密码提示信息</string>
+    <string name="create_wallet_now">正在创建钱包，请稍等...</string>
+    <string name="password_wrong">密码错误，请重新输入</string>
+    <string name="password_format_wrong">密码格式错误</string>
+    <string name="username_format_wrong">用户名格式错误</string>
+    <string name="password_different">两次密码输入不同，请重新输入</string>
+    <string name="create_wallet_failed">创建钱包失败...</string>
+    <string name="wallet_address_format_wrong">钱包地址格式错误</string>
+    <string name="receiva_same_to_send">收款方与转账方地址相同，转账失败</string>
+    <string name="send_value_format_wrong">转账金额格式错误</string>
+
+
+    <!--create wallet success-->
+    <string name="backup">备份助记词</string>
+    <string name="backup_wallet">备份钱包</string>
+    <string name="create_wallet_success">请立即进行备份！</string>
+    <string name="create_wallet_success_warning">我们强烈建议您将助记词抄写在纸上，或离线的电脑设备上或其他安全的地方</string>
+    <string name="mnemonic_warning_1">• 助记词一旦遗失无法复原</string>
+    <string name="mnemonic_warning_2">• 任何人取得您的助记词都可以访问或使用您的资产</string>
+    <string name="validate_password">正在验证密码，请稍后...</string>
+
+    <!--authentication-->
+    <string name="authentication">密码验证</string>
+    <string name="authentication_password">输入您的密码后继续</string>
+    <string name="authentication_hint">请输入密码</string>
+
+    <!--copymnemonic-->
+    <string name="copy_mnemonic">抄写助记词</string>
+    <string name="copy_mnemonic_details">请确保你的环境安全，周围没人窥视你的屏幕</string>
+    <string name="get_mnemonic">正在获取助记词，请稍候...</string>
+    <string name="warning">注意</string>
+    <string name="dont_photograph">不要拍照或截图，助记词泄露将导致您的资产账户不再安全。</string>
+    <string name="understood">知道了</string>
+
+    <!--conifrm mnemonic-->
+    <string name="confirm_mnemonic">验证助记词</string>
+    <string name="confirm_mnemonic_desc">按正确顺序添加以下单词</string>
+    <string name="confirm">确认</string>
+    <string name="confirm_mnemonic_failed">验证助记词失败...</string>
+
+    <!--assets details-->
+    <string name="send">转账</string>
+    <string name="receive">收款</string>
+    <string name="no_transaction_record">暂无交易记录</string>
+
+    <!--receivables-->
+    <string name="scan_qrcode">扫描二维码即可向我付款</string>
+    <string name="copy_address">复制地址</string>
+
+    <!--send-->
+    <string name="send_address">转账地址</string>
+    <string name="send_address_hint">请输入收款人钱包地址</string>
+    <string name="send_amount">转账金额</string>
+    <string name="send_amount_hint">请输入数量</string>
+    <string name="memo">备注:</string>
+    <string name="mining_fee">交易费</string>
+    <string name="slow">慢</string>
+    <string name="fast">快</string>
+    <string name="send_error">余额或交易费不足，转账失败</string>
+
+    <!--item_wallet-->
+    <string name="total_assets_item">总资产≈</string>
+    <string name="total_assets_item_value">%1$s %2$s</string>
+
+    <!--wallet details-->
+    <string name="edit_password">修改密码</string>
+    <string name="export_private_key">导出私钥</string>
+    <string name="export_keystore">导出Keystore</string>
+    <string name="delete_wallet">删除钱包</string>
+    <string name="edit_new_wallet_name">请输入新钱包名称</string>
+    <string name="edit_wallet_name">修改钱包名称</string>
+    <string name="edit_wallet_name_sucess">修改钱包名称成功</string>
+    <string name="edit_wallet_name_failed">修改钱包名称失败</string>
+
+    <!--edit password-->
+    <string name="old_password">旧密码</string>
+    <string name="old_password_hint">请输入密码</string>
+    <string name="new_password">新密码</string>
+    <string name="new_password_hint">请输入新密码</string>
+    <string name="re_new_password">重复新密码</string>
+    <string name="re_new_password_hint">请再次输入新密码</string>
+    <string name="finish_edit">确认修改</string>
+    <string name="editing">正在修改密码，请稍后...</string>
+    <string name="edit_sucess">修改密码成功</string>
+    <string name="edit_failed">修改密码失败</string>
+
+    <!--export keystore-->
+    <string name="store_offline">离线存储</string>
+    <string name="store_offline_desc">请复制黏贴Keystore文件到安全、离线的地方保存。切勿保存至邮箱，笔记本，网盘，聊天工具等，非常危险。</string>
+    <string name="dont_internet">请勿使用网络传输</string>
+    <string name="dont_internet_desc">请勿通过网络工具传输Keystore文件，一旦被黑客获取将造成不可挽回的资产损失。建议离线设备通过扫描二维码方式传输。</string>
+    <string name="keystore_value">Keystore</string>
+    <string name="copy_keystore">复制Keystore</string>
+    <string name="exporting_keystore">正在导出keystore，请稍后...</string>
+    <string name="export_keystore_failed">导出keystore失败，请返回上一层，重新导入</string>
+    <string name="copy_success">复制成功</string>
+
+    <!--change wallet-->
+    <string name="change_wallet">切换钱包</string>
+
+    <!--welcome-->
+    <string name="def_desc">安全 稳定 高效</string>
+
+    <!--qrcode-->
+    <string name="get_qrcode_fail">获取二维码失败</string>
+
+    <!--export private key-->
+    <string name="export_private_desc">安全提示：私钥未经加密，导出存在风险，请妥善保存</string>
+    <string name="copy">复制</string>
+    <string name="exporting_private_key">正在导出私钥，请稍后...</string>
+    <string name="export_private_failed">导出私钥失败，请重新导入</string>
+
+    <!--delete wallet-->
+    <string name="delete_wallet_desc">你确定要删除本钱包吗？删除后将无法恢复</string>
+    <string name="deleting_wallet">正在删除钱包，请稍后...</string>
+    <string name="delete_wallet_failed">删除失败</string>
+
+    <!--send-->
+    <string name="unlocking_wallet">正在解锁账户，请稍后...</string>
+    <string name="signing">正在签名，请稍后...</string>
+
+    <!--transaction-->
+    <string name="transaction_success">交易成功</string>
+    <string name="from">发款方:</string>
+    <string name="to">收款方:</string>
+    <string name="gas_fee">矿工费用:</string>
+    <string name="order">订单号:</string>
+    <string name="transaction_time">交易时间:</string>
+
+    <!--setting-->
+    <string name="monetary_unit">货币单位</string>
+    <string name="rmb">人民币</string>
+    <string name="usd">美元</string>
+
+    <!--choice money-->
+    <string name="choice_money">选择货币</string>
+    <string name="save">保存</string>
+
+    <!--update self-->
+    <string name="discover_new_version">发现新版本</string>
+    <string name="update">立即升级</string>
+    <string name="no_update">以后再说</string>
+    <string name="wifi_title">温馨提示</string>
+    <string name="wifi_desc">您正在使用移动网络数据，请注意流量消耗。</string>
+    <string name="wifi_ok">土豪继续下载</string>
+    <string name="wifi_cancel">稍后再说</string>
+
+    <!--about-->
+    <string name="version">版本：V %1$s</string>
+    <string name="official_website">官方网站</string>
+    <string name="telegram_group_cn">电报群中文组</string>
+    <string name="telegram_group_en">电报群英文组</string>
+    <string name="email_address">邮箱地址</string>
+    <string name="company_name"> © 2018 DEFCHAIN™</string>
+    <string name="official_website_content">defchain.io</string>
+    <string name="telegram_group_cn_content">t.me/Defchain_CN</string>
+    <string name="telegram_group_en_content">t.me/defchain</string>
+    <string name="email_address_content">info@defchain.io</string>
+
+    <!--没有备份助记词的弹窗-->
+    <string name="no_backup_mnemonic_dialog_title">请先备份助记词</string>
+    <string name="no_backup_mnemonic_dialog_msg">为了您的资金安全，您必须先备份助记词，任何意外发生都可能导致资产丢失。</string>
+    <string name="no_backup_mnemonic_dialog_btn_ok">立即备份</string>
+    <string name="no_backup_mnemonic_dialog_btn_cancel">取消</string>
+
+
+</resources>

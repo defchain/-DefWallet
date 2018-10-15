@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_bottom"></RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="@color/bottom_gray" />
+        <!--assets-->
+        <RelativeLayout
+            android:id="@+id/bottom_assets"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="45dp"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/img_bottom_assets"
+                android:layout_width="21dp"
+                android:layout_height="19dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/assets_focus" />
+
+            <TextView
+                android:id="@+id/tv_bottom_assets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="@string/assets"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <!--quotation-->
+        <RelativeLayout
+            android:id="@+id/bottom_quotation"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/img_bottom_quotation"
+                android:layout_width="20dp"
+                android:layout_height="19dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/quotation_normal" />
+
+            <TextView
+                android:id="@+id/tv_bottom_quotation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="@string/quotation"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/bottom_main"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="45dp"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/img_bottom_main"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/main_normal" />
+
+            <TextView
+                android:id="@+id/tv_bottom_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="@string/main"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

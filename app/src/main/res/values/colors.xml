@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#263D55</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#F7931A</color>
+
+    <color name="titlebarcolor">#263D55</color>
+    <color name="buttoncolor">#F7931A</color>
+    <color name="button_gray">#cccccc</color>
+    <color name="white">#ffffff</color>
+    <color name="app_title">#1e2631</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="gray_bg">#f5f8f9</color>
+    <color name="bottom_blue">#4a90e2</color>
+    <color name="bottom_gray">#808492</color>
+    <color name="currency_name">#2C3040</color>
+    <color name="import_navigation">#5C7795</color>
+    <color name="edt_hint">#BDBDBF</color>
+    <color name="mnemonic_button_gray">#e5e5e5</color>
+    <color name="mnemonic_button_blue">#4A90E2</color>
+    <color name="receive_wallet_name">#2c3040</color>
+    <color name="bg_warning">#fff8a7</color>
+    <color name="vertical_dividing_line">#cccccc</color>
+    <color name="wallet_item_selected">#f7f7f7</color>
+
+    <color name="item_wallet_blue">#1F42FF</color>
+    <color name="item_wallet_green">#59AC0F</color>
+
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <color name="receive_color">#60a993</color>
+    <color name="send_color">#e32b42</color>
+
+    <color name="update_desc">#6f737f</color>
+
+    <color name="no_copy">#cf3b3b</color>
+
+
+</resources>

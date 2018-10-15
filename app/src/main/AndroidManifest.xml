@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lajoin.defwallet">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".DefApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <activity android:name=".Activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Activity.MainActivity" />
+        <activity
+            android:name=".Activity.ImportWalletActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustResize" />
+        <activity android:name=".Activity.WalletManagementActivity" />
+        <activity
+            android:name=".Activity.CreatWalletActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustResize" />
+        <activity android:name=".Activity.BackupWarningActivity" />
+        <activity android:name=".Activity.CopyMnemonicActivity" />
+        <activity android:name=".Activity.ConfirmMnemonicActivity">
+
+        </activity>
+
+        <activity android:name=".Activity.AssetsDetailsActivity" />
+        <activity android:name=".Activity.ReceivablesActivity" />
+        <activity
+            android:name=".Activity.SendActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustResize" />
+        <activity android:name=".Activity.WalletDetailsActivity" />
+        <activity android:name=".Activity.EditPasswordActivity" />
+        <activity android:name=".Activity.ExportKeystoreActivity" />
+        <activity android:name=".Activity.StartActivity" />
+        <activity android:name=".Activity.MipcaActivityCapture" />
+        <activity android:name=".Activity.TransactionSuccessActivity" />
+        <activity android:name=".Activity.SettingActivity" />
+        <activity android:name=".Activity.ChoiceMoneyActivity" />
+        <activity android:name=".Activity.AddAssetsActivity" />
+        <activity android:name=".Activity.AboutActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.lajoin.defwallet.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

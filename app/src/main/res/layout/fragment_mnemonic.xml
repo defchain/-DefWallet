@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:fitsSystemWindows="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_input_mnemonic"
+            android:layout_width="match_parent"
+            android:layout_height="162dp"
+            android:background="@color/white"
+            android:paddingBottom="40dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:id="@+id/tv_mnemonic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:text="@string/mnemonic"
+                android:textColor="@color/bottom_gray"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edt_mnemonic"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:layout_below="@+id/tv_mnemonic"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray_bg"
+                android:gravity="top"
+                android:hint="@string/input_mnemonic"
+                android:inputType="textMultiLine"
+                android:padding="9dp"
+                android:textColorHint="@color/edt_hint"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_mnemonic_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_input_mnemonic"
+            android:layout_marginTop="12dp"
+            android:background="@color/white"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+            <!--Path-->
+            <TextView
+                android:id="@+id/tv_mnemonic_path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/path"
+                android:textColor="@color/bottom_gray"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edt_mnemonic_path"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tv_mnemonic_path"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/img_mnemonic_path"
+                android:background="@null"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:text="m/44'/60'/0'/0/0"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/img_mnemonic_path"
+                android:layout_width="@dimen/edit_img"
+                android:layout_height="@dimen/edit_img"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_mnemonic_path"
+                android:layout_marginTop="@dimen/edit_img_margin_top"
+                android:scaleType="fitXY"
+                android:src="@drawable/arrow_right_s" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/edt_mnemonic_path"
+                android:background="@color/gray_bg" />
+
+            <!--username-->
+            <TextView
+                android:id="@+id/tv_mnemonic_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_mnemonic_path"
+                android:layout_marginTop="15dp"
+                android:text="@string/wallet_name"
+                android:textColor="@color/bottom_gray"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edt_mnemonic_username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tv_mnemonic_username"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="@string/input_wallet_name"
+                android:inputType="textMultiLine"
+                android:textColorHint="@color/edt_hint"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/edt_mnemonic_username"
+                android:background="@color/gray_bg" />
+
+            <!--password-->
+            <TextView
+                android:id="@+id/tv_mnemonic_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_mnemonic_username"
+                android:layout_marginTop="15dp"
+                android:text="@string/password"
+                android:textColor="@color/bottom_gray"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edt_mnemonic_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tv_mnemonic_password"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="@string/input_password"
+                android:inputType="textMultiLine"
+                android:textColorHint="@color/edt_hint"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/img_password_ciphertext"
+                android:layout_width="@dimen/edit_img"
+                android:layout_height="@dimen/edit_img"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_mnemonic_password"
+                android:layout_marginTop="@dimen/edit_img_margin_top"
+                android:src="@drawable/eye_close" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/edt_mnemonic_password"
+                android:background="@color/gray_bg" />
+            <!--repassword-->
+            <TextView
+                android:id="@+id/tv_mnemonic_repassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_mnemonic_password"
+                android:layout_marginTop="15dp"
+                android:text="@string/confirm_password"
+                android:textColor="@color/bottom_gray"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edt_mnemonic_repassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tv_mnemonic_repassword"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="@string/input_password_again"
+                android:inputType="textMultiLine"
+                android:textColorHint="@color/edt_hint"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/img_repassword_ciphertext"
+                android:layout_width="@dimen/edit_img"
+                android:layout_height="@dimen/edit_img"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_mnemonic_repassword"
+                android:layout_marginTop="@dimen/edit_img_margin_top"
+                android:src="@drawable/eye_close" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/edt_mnemonic_repassword"
+                android:background="@color/gray_bg" />
+
+
+            <Button
+                android:id="@+id/btn_star_improt"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_below="@+id/edt_mnemonic_repassword"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/shape_button3"
+                android:text="@string/import_now"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+    <!--</RelativeLayout>-->

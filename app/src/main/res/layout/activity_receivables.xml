@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_receivables"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/titlebarcolor">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_creat_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/titlebarcolor"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/receive"
+            android:textColor="@color/white"
+            android:textSize="@dimen/toolbar_text_size" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/toolbar_height"
+        android:background="@color/titlebarcolor">
+
+        <RelativeLayout
+            android:layout_width="298dp"
+            android:layout_height="408dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_button1">
+
+            <!--wallet name-->
+            <TextView
+                android:id="@+id/tv_wallet_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="38dp"
+                android:text="Adrian"
+                android:textColor="@color/receive_wallet_name"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="14dp"
+                android:layout_alignBottom="@+id/tv_wallet_name"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="9dp"
+                android:layout_toLeftOf="@+id/tv_wallet_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/mask" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_wallet_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/scan_qrcode"
+                android:textColor="@color/bottom_gray" />
+
+            <ImageView
+                android:id="@+id/img_reveiver_qrcode"
+                android:layout_width="168dp"
+                android:layout_height="168dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_reveiver_qrcode"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/receive_wallet_name" />
+
+            <RelativeLayout
+                android:id="@+id/rl_copy_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="42dp"
+                android:background="@drawable/shape_button3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1px"
+                    android:background="@drawable/shape_button1"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="21dp"
+                    android:paddingRight="21dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/copy_address"
+                    android:textColor="@color/bottom_gray"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:minHeight="140dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_wallet_colorful"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/item_wallet_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="13dp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/item_wallet_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_wallet_name"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="3dp"
+                android:text="0x3db5dbba...170c4175de482a"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="13dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="17dp"
+                android:src="@drawable/arrow_right_white" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/rl_wallet_colorful"
+            android:background="@drawable/shape_item_wallet">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/total_assets_item"
+                android:textColor="@color/bottom_gray" />
+
+            <TextView
+                android:id="@+id/item_wallet_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="17dp"
+                android:text="$ 15000.00"
+                android:textColor="@color/bottom_gray" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

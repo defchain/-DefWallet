@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="170dp"
+    android:background="@drawable/shape_dialog"
+    android:minHeight="170dp">
+
+    <TextView
+        android:id="@+id/tv_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="@string/warning"
+        android:textColor="@color/receive_wallet_name"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_warning"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="7dp"
+        android:gravity="center"
+        android:text="@string/dont_photograph"
+        android:textColor="@color/bottom_gray"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        android:background="@drawable/shape_button"
+        android:text="@string/understood"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

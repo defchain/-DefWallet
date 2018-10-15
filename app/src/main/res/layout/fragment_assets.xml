@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_assets"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_assets_title"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/titlebarcolor">
+
+        <RelativeLayout
+            android:id="@+id/rl_wallet_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="23dp">
+
+            <ImageView
+                android:id="@+id/icon_wallet"
+                android:layout_width="17dp"
+                android:layout_height="14dp"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet" />
+
+
+            <TextView
+                android:id="@+id/name_wallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/icon_wallet"
+                android:textColor="@color/white"
+                android:textSize="@dimen/total_assets_text" />
+
+            <ImageView
+                android:id="@+id/triangle"
+                android:layout_width="9dp"
+                android:layout_height="6dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/name_wallet"
+                android:scaleType="fitXY"
+                android:src="@drawable/triangle" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/more" />
+        <!--total assets-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp">
+
+            <TextView
+                android:id="@+id/tv_total_assets"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="@dimen/total_assets_text" />
+
+            <ImageView
+                android:id="@+id/img_total_assets"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_total_assets"
+                android:scaleType="fitXY"
+                android:src="@drawable/cansee_w" />
+
+        </RelativeLayout>
+        <!--assets-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="71dp">
+
+            <TextView
+                android:id="@+id/tv_assets"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/approximate"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/total_assets_value" />
+
+            <TextView
+                android:id="@+id/approximate"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:gravity="bottom"
+                android:paddingBottom="5dp"
+                android:text="@string/approximate_symbol"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+        <!--address-->
+        <TextView
+            android:id="@+id/tv_assets_address"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/total_assets_text" />
+
+        <!--未备份助记词-->
+        <RelativeLayout
+            android:id="@+id/rl_no_copy_mnemonic"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_below="@+id/tv_assets_address"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape_no_cope"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/no_copy"
+                android:textColor="@color/white"
+                android:textSize="@dimen/total_assets_text" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <!--assest list-->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_assets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_assets_title">
+
+        <ListView
+            android:id="@+id/lv_assets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#00ffffff"
+            android:scrollbars="none" />
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_assets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add_white_24dp" />
+
+
+</RelativeLayout>
+
+

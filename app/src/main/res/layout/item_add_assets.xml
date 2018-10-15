@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_item_add_assets"
+    android:layout_width="match_parent"
+    android:layout_height="67dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:minHeight="67dp">
+
+    <ImageView
+        android:id="@+id/img_add_assets_icon"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/eth" />
+
+    <TextView
+        android:id="@+id/tv_add_assets_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="9dp"
+        android:layout_toRightOf="@+id/img_add_assets_icon"
+        android:text="ETH"
+        android:textColor="@color/titlebarcolor"
+        android:textSize="15sp" />
+
+    <Switch
+        android:id="@+id/switch_add_assets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:focusable="false" />
+
+
+</RelativeLayout>

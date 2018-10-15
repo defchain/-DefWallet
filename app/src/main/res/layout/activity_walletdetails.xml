@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_wallet_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_wallet_details"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/titlebarcolor"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/wallet_management"
+            android:textColor="@color/white"
+            android:textSize="@dimen/toolbar_text_size" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/toolbar_height"
+        android:background="@color/gray_bg">
+
+        <TextView
+            android:id="@+id/tv_wallet_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/titlebarcolor"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/img_wallet_name"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="28dp"
+            android:layout_toRightOf="@+id/tv_wallet_name"
+            android:src="@drawable/edit_name" />
+
+        <TextView
+            android:id="@+id/tv_wallet_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_wallet_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/bottom_gray"
+            android:textSize="15sp" />
+
+        <!--total assets-->
+        <RelativeLayout
+            android:id="@+id/rl_total_assets"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_below="@+id/tv_wallet_address"
+            android:layout_marginTop="25dp"
+            android:background="@color/white"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/total_assets_item"
+                android:textColor="@color/titlebarcolor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_assets_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/titlebarcolor"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <!--edit password-->
+        <RelativeLayout
+            android:id="@+id/rl_edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_below="@+id/rl_total_assets"
+            android:layout_marginTop="12dp"
+            android:background="@color/white"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/edit_password"
+                android:textColor="@color/bottom_gray"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="9dp"
+                android:layout_height="11dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_right" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/button_gray" />
+
+        </RelativeLayout>
+
+        <!--export private key-->
+        <RelativeLayout
+            android:id="@+id/rl_export_private_key"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_below="@+id/rl_edit_password"
+            android:background="@color/white"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/export_private_key"
+                android:textColor="@color/bottom_gray"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="9dp"
+                android:layout_height="11dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_right" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/button_gray" />
+
+        </RelativeLayout>
+
+        <!--export keystore-->
+        <RelativeLayout
+            android:id="@+id/rl_export_keystore"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_below="@+id/rl_export_private_key"
+            android:background="@color/white"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/export_keystore"
+                android:textColor="@color/bottom_gray"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="9dp"
+                android:layout_height="11dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_right" />
+
+        </RelativeLayout>
+
+        <!--delete wallet-->
+        <RelativeLayout
+            android:id="@+id/rl_delete_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_below="@+id/rl_export_keystore"
+            android:layout_marginTop="12dp"
+            android:background="@color/white"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/delete_wallet"
+                android:textColor="@color/bottom_gray"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

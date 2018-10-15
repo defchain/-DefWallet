@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_send"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_send"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/titlebarcolor"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/send"
+            android:textColor="@color/white"
+            android:textSize="@dimen/toolbar_text_size" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/toolbar_height">
+
+        <RelativeLayout
+            android:id="@+id/rl_send_down"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp">
+            <!--send address-->
+            <TextView
+                android:id="@+id/tv_send_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:text="@string/send_address"
+                android:textColor="@color/bottom_gray" />
+
+            <EditText
+                android:id="@+id/edt_send_address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tv_send_address"
+                android:layout_toLeftOf="@+id/iv_send_address"
+                android:background="@null"
+                android:hint="@string/send_address_hint"
+                android:textColorHint="@color/edt_hint"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/iv_send_address"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignBottom="@+id/edt_send_address"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="13dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scanning1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/edt_send_address"
+                android:background="@color/edt_hint" />
+
+
+            <!--send amount-->
+            <TextView
+                android:id="@+id/tv_send_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_send_address"
+                android:layout_marginTop="19dp"
+                android:text="@string/send_amount"
+                android:textColor="@color/bottom_gray" />
+
+            <EditText
+                android:id="@+id/edt_send_amount"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tv_send_amount"
+                android:background="@null"
+                android:hint="@string/send_amount_hint"
+                android:textColorHint="@color/edt_hint"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/edt_send_amount"
+                android:background="@color/edt_hint" />
+
+
+            <!--memo-->
+            <TextView
+                android:id="@+id/tv_memo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_send_amount"
+                android:layout_marginTop="19dp"
+                android:text="@string/memo"
+                android:textColor="@color/bottom_gray" />
+
+            <EditText
+                android:id="@+id/edt_memo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tv_memo"
+                android:background="@null"
+                android:textColorHint="@color/edt_hint"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@+id/edt_memo"
+                android:background="@color/gray_bg" />
+
+
+            <!--mining_fee-->
+            <TextView
+                android:id="@+id/tv_mining_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line"
+                android:layout_marginTop="19dp"
+                android:text="@string/mining_fee"
+                android:textColor="@color/bottom_gray" />
+
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_mining_fee"
+                android:layout_marginTop="20dp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_below="@+id/seekbar"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/slow"
+                    android:textColor="@color/edt_hint" />
+
+                <TextView
+                    android:id="@+id/tv_mining_fee_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/bottom_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/fast"
+                    android:textColor="@color/edt_hint" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_below="@+id/rl_seekbar"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/shape_button"
+                android:text="@string/send"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

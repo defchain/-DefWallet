@@ -1,0 +1,31 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="edit_img">40dp</dimen>
+    <dimen name="edit_img_margin_top">5dp</dimen>
+    <dimen name="toolbar_height">61dp</dimen>
+    <dimen name="default_padding_left_right">14dp</dimen>
+    <dimen name="default_card_height">58dp</dimen>
+
+
+    <!--setting-->
+    <dimen name="setting_arrow">12dp</dimen>
+    <dimen name="name_to_arrow_margin">6dp</dimen>
+
+    <!--assets-->
+    <dimen name="assets_icon">30dp</dimen>
+
+
+    <!--textSize-->
+    <!--assets-->
+    <dimen name="total_assets_text">12sp</dimen>
+    <dimen name="total_assets_value">27sp</dimen>
+    <dimen name="digital_name_size">15sp</dimen>
+
+    <!--toolbar-->
+    <dimen name="toolbar_text_size">18sp</dimen>
+    <dimen name="toolbar_text_size_right">14sp</dimen>
+
+</resources>

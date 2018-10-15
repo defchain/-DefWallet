@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/titlebarcolor">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/def_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/def_desc"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btn_creat_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/def_desc"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_button"
+        android:text="@string/create_wallet"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_import_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btn_creat_wallet"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_button1">
+
+        <Button
+            android:id="@+id/btn_import_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="1px"
+            android:background="@drawable/shape_button2"
+            android:text="@string/import_wallet"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/welcome_bg" />
+
+</RelativeLayout>

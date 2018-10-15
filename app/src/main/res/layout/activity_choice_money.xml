@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_choice_money"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/titlebarcolor"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/choice_money"
+            android:textColor="@color/white"
+            android:textSize="@dimen/toolbar_text_size" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="14dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/toolbar_text_size_right" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/default_padding_left_right"
+        android:layout_marginTop="@dimen/toolbar_height"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_rmb"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/default_card_height"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/rb_usd"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/default_card_height"
+            android:gravity="center" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/toolbar_height"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/default_card_height"
+            android:layout_marginLeft="@dimen/default_padding_left_right"
+            android:gravity="center_vertical"
+            android:text="@string/rmb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/default_card_height"
+            android:layout_marginLeft="@dimen/default_padding_left_right"
+            android:gravity="center_vertical"
+            android:text="@string/usd" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

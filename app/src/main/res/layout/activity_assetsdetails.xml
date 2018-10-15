@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_assetsdetails_title"
+        android:layout_width="match_parent"
+        android:layout_height="244dp"
+        android:background="@color/titlebarcolor">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="11dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/arrow_left" />
+
+        <ImageView
+            android:id="@+id/img_currency_icon"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:id="@+id/tv_currency_name"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_below="@+id/img_currency_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_currency_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_currency_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="0.000000"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/tv_currency_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_currency_value"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/tv_currency_value"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_currency_type"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/tv_currency_type"
+            android:text="@string/approximate_symbol"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_currency_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_currency_value"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/tv_send"
+            android:layout_width="144dp"
+            android:layout_height="46dp"
+            android:layout_below="@+id/tv_currency_number"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/shape_button1"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="@string/send"
+            android:textColor="@color/mnemonic_button_blue"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_receive"
+            android:layout_width="144dp"
+            android:layout_height="46dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_currency_number"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="31dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/shape_button5"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="@string/receive"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <!--Transaction record-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_assetsdetails_title">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/srl_assets_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/lv_transaction_record"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_transaction_record"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/img_no_transaction"
+                android:layout_width="67dp"
+                android:layout_height="67dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="75dp"
+                android:src="@drawable/no_transaction_record" />
+
+            <TextView
+                android:id="@+id/tv_no_transaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_no_transaction"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="19dp"
+                android:text="@string/no_transaction_record"
+                android:textColor="@color/bottom_gray"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

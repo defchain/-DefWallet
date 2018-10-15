@@ -1,0 +1,233 @@
+<resources>
+    <string name="app_name">DEFWallet</string>
+
+    <string name="create_wallet">Create wallet</string>
+    <string name="import_wallet">Import wallet</string>
+    <string name="assets">Assets</string>
+    <string name="quotation">Market</string>
+    <string name="main">Me</string>
+    <string name="total_assets">Total Assets(%1$s)</string>
+    <string name="deflogo">DEF wallet is guarding your assets</string>
+    <string name="wallet_management">Manage Wallet</string>
+    <string name="transaction_record">Transaction Record</string>
+    <string name="setting">Setting</string>
+    <string name="mnemonic">mnemonic Word</string>
+    <string name="keystore">keystore</string>
+    <string name="private_key">private Key</string>
+    <string name="input_mnemonic">Please input all mnemonic words in order and separate them with space</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="next">Next</string>
+    <string name="scan">Scan</string>
+    <string name="function_unopened">This feature will be supported soon</string>
+    <string name="please_wait">Please Wait...</string>
+    <string name="no_permission">No Permission...</string>
+    <string name="usd_symbol">$</string>
+    <string name="rmb_symbol">¥</string>
+    <string name="approximate_symbol">≈</string>
+    <string name="add_assets">+Add assets</string>
+    <string name="add_assets_s">Add assets</string>
+    <string name="search">Search</string>
+    <string name="about">About</string>
+    <string name="no_copy">Please backup your wallet to ensure security ></string>
+    <string name="exit">Tap again to exit</string>
+    <string name="no_internet">No Internet Connection.</string>
+    <string name="internet_bad">Weak Network signal</string>
+
+    <!--import wallet-->
+    <string name="path">Path</string>
+    <string name="password">Password（6～16 charsets）</string>
+    <string name="input_password">Enter a password</string>
+    <string name="confirm_password">confirm Password</string>
+    <string name="input_password_again">Re-enter the password</string>
+    <string name="import_now">IMPORT NOW</string>
+    <string name="importing">Importing,Please Wait...</string>
+    <string name="import_fail">Import Fail</string>
+    <string name="import_has_same_name">This wallet name has been taken</string>
+    <string name="create_has_same_name">This wallet name has been taken</string>
+    <string name="modify_has_same_name">This wallet name has been taken</string>
+    <string name="has_same_wallet">Wallet already exisis，faild to impory.</string>
+
+    <string name="input_keystore">Please Enter the Keystore here</string>
+    <string name="keystore_password">Keystore password</string>
+    <string name="input_keystore_password">Please enter keystore password</string>
+
+    <string name="input_private_key">Please enter the Private Key here</string>
+    <string name="input_private_password">Enter a new password</string>
+
+    <string name="path_item1">m/44\'/60\'/0\'/0/0 Jaxx,Matamask(ETH)</string>
+    <string name="path_item2">m/44\'/60\'/0/0 Ledger(ETH)</string>
+    <string name="path_item3">m/44\'/60\'/1\'/0/0 Your Custom Path</string>
+
+
+    <!--create wallet-->
+    <string name="wallet_name">Wallet Name(2～20 characters)</string>
+    <string name="input_wallet_name">Input name with no more than 20 characters</string>
+    <string name="password_hint">Password Hint (optional)</string>
+    <string name="input_password_hint">Please enter password hint</string>
+    <string name="create_wallet_now">Creating,Please Wait...</string>
+    <string name="password_wrong">Wrong Password, please retype</string>
+    <string name="password_format_wrong">Wrong Password format</string>
+    <string name="username_format_wrong">Wrong Username format</string>
+    <string name="password_different">Inconsistent password entry twice,please re-enter</string>
+    <string name="create_wallet_failed">Create Wallet Failed...</string>
+    <string name="wallet_address_format_wrong">Wrong Wallet Address format</string>
+    <string name="receiva_same_to_send">The payee has the same address as the transferee and the transfer failed.</string>
+    <string name="send_value_format_wrong">Wrong Transfer Amount format</string>
+
+    <!--create wallet success-->
+    <string name="backup">Mnemonic Word Backup</string>
+    <string name="backup_wallet">BACKUP NOW</string>
+    <string name="create_wallet_success">Please backup your wallet now!</string>
+    <string name="create_wallet_success_warning">we highly recommend you write the Mnemonic words on paper and keep it in a safe place</string>
+    <string name="mnemonic_warning_1">• When Mnemonic once lost,it cannot be recovered</string>
+    <string name="mnemonic_warning_2">• Anyone get it can assess or spend your assets</string>
+    <string name="validate_password">Verify password，Please Wait...</string>
+
+
+    <!--authentication-->
+    <string name="authentication">Confirm Password</string>
+    <string name="authentication_password">Enter the password and continue</string>
+    <string name="authentication_hint">Password</string>
+
+    <!--copymnemonic-->
+    <string name="copy_mnemonic">Write down to paper</string>
+    <string name="copy_mnemonic_details">Make sure you environment is secure, and no one sees you screen</string>
+    <string name="get_mnemonic">Get mnemonic Please Wait...</string>
+    <string name="warning">Warning</string>
+    <string name="dont_photograph">Anyone with your mnemonic words can access or spend your assets! Please write down on paper and keep it safe.</string>
+    <string name="understood">Understood</string>
+
+
+    <!--conifrm mnemonic-->
+    <string name="confirm_mnemonic">Confirm mnemonic words</string>
+    <string name="confirm_mnemonic_desc">Add the word below in the correct order</string>
+    <string name="confirm">Confirm</string>
+    <string name="confirm_mnemonic_failed">Confirm Failed...</string>
+
+    <!--assets details-->
+    <string name="send">Send</string>
+    <string name="receive">Receive</string>
+    <string name="no_transaction_record">No transaction record</string>
+
+    <!--receivables-->
+    <string name="scan_qrcode">Scan to pay me</string>
+    <string name="copy_address">Copy Address</string>
+
+
+    <!--send-->
+    <string name="send_address">Send To</string>
+    <string name="send_address_hint">Input receiver's wallet address</string>
+    <string name="send_amount">Amount</string>
+    <string name="send_amount_hint">Transfer Amount</string>
+    <string name="memo">Memo:</string>
+    <string name="mining_fee">Transaction Fee</string>
+    <string name="slow">Slow</string>
+    <string name="fast">Fast</string>
+    <string name="send_error">insufficient funds for gas * price + value</string>
+
+    <!--item_wallet-->
+    <string name="total_assets_item">Total Assets≈</string>
+    <string name="total_assets_item_value">%1$s %2$s</string>
+
+    <!--wallet details-->
+    <string name="edit_password">Change Password</string>
+    <string name="export_private_key">Export private Key</string>
+    <string name="export_keystore">Export Keystore</string>
+    <string name="delete_wallet">Delete Wallet</string>
+    <string name="edit_new_wallet_name">Please enter a new wallet name</string>
+    <string name="edit_wallet_name">Change wallet name</string>
+    <string name="edit_wallet_name_sucess">Change wallet name sucess</string>
+    <string name="edit_wallet_name_failed">Change wallet name failed</string>
+
+    <!--edit password-->
+    <string name="old_password">Current password</string>
+    <string name="old_password_hint">Please enter password</string>
+    <string name="new_password">New Password</string>
+    <string name="new_password_hint">Input new password</string>
+    <string name="re_new_password">Repeat Password</string>
+    <string name="re_new_password_hint">Input new password again</string>
+    <string name="finish_edit">Change</string>
+    <string name="editing">Changing，Please wait...</string>
+    <string name="edit_sucess">Change Success</string>
+    <string name="edit_failed">Change Failed</string>
+
+    <!--export keystore-->
+    <string name="store_offline">Store Offline</string>
+    <string name="store_offline_desc">Please store the Keystore to a safe offline place like a USB drive.Never put it on internet</string>
+    <string name="dont_internet">Dont Transfer via Internet Tools</string>
+    <string name="dont_internet_desc">Dont use Email/Cloud Storage/Notepad/IM tools to tansfer Keystore.It easily gets hacked and result in loss.</string>
+    <string name="keystore_value">Keystore</string>
+    <string name="copy_keystore">Copy Keystore</string>
+    <string name="exporting_keystore">Exporting,Please wait...</string>
+    <string name="export_keystore_failed">Export Failed,Please Back</string>
+    <string name="copy_success">Copy Success</string>
+
+    <!--change wallet-->
+    <string name="change_wallet">Change Wallet</string>
+
+    <!--welcome-->
+    <string name="def_desc">Safe Stable Efficient</string>
+
+    <!--qrcode-->
+    <string name="get_qrcode_fail">get qrcode fail</string>
+    <!--export private key-->
+    <string name="export_private_desc">Security note: The private key is not encrypted. The export is risky. Please save it properly.</string>
+    <string name="copy">Copy</string>
+    <string name="exporting_private_key">Exporting,Please wait...</string>
+    <string name="export_private_failed">Export Failed</string>
+
+    <!--delete wallet-->
+    <string name="delete_wallet_desc">Are you sure you want to delete this wallet ? the wallet will not be recovered.</string>
+    <string name="deleting_wallet">Deleting, Please wait...</string>
+    <string name="delete_wallet_failed">Delete Failed</string>
+
+    <!--send-->
+    <string name="unlocking_wallet">Please wait...</string>
+    <string name="signing">signing，Please wait...</string>
+
+    <!--transaction-->
+    <string name="transaction_success">Transaction Success</string>
+    <string name="from">From:</string>
+    <string name="to">To:</string>
+    <string name="gas_fee">Transaction Fee:</string>
+    <string name="order">Order number #:</string>
+    <string name="transaction_time">Transaction Time:</string>
+
+    <!--setting-->
+    <string name="monetary_unit">Currency Unit</string>
+    <string name="rmb">RMB</string>
+    <string name="usd">USD</string>
+
+    <!--choice money-->
+    <string name="choice_money">Currency Unit</string>
+    <string name="save">Save</string>
+
+    <!--update self-->
+    <string name="discover_new_version">Newer Update is available</string>
+    <string name="update">Update</string>
+    <string name="no_update">Cancel</string>
+    <string name="wifi_title">Download over Cellular</string>
+    <string name="wifi_desc">You are about to download over your mobile network.Would you like to continue?</string>
+    <string name="wifi_ok">CONTINUE</string>
+    <string name="wifi_cancel">CANCEL</string>
+
+    <!--about-->
+    <string name="version">Version：V %1$s</string>
+    <string name="official_website">Official website</string>
+    <string name="telegram_group_cn">Telegram Group(cn)</string>
+    <string name="telegram_group_en">Telegram Group(en)</string>
+    <string name="email_address">Email Address</string>
+    <string name="company_name"> © 2018 DEFCHAIN™</string>
+    <string name="official_website_content">defchain.io</string>
+    <string name="telegram_group_cn_content">t.me/Defchain_CN</string>
+    <string name="telegram_group_en_content">t.me/defchain</string>
+    <string name="email_address_content">info@defchain.io</string>
+
+    <!--没有备份助记词的弹窗-->
+    <string name="no_backup_mnemonic_dialog_title">Backup you mnemonic words first</string>
+    <string name="no_backup_mnemonic_dialog_msg">For the safety of your funds, you need backup you mnemonic words first, any accidents can result in asset loss.</string>
+    <string name="no_backup_mnemonic_dialog_btn_ok">BACKUP NOW</string>
+    <string name="no_backup_mnemonic_dialog_btn_cancel">CANCEL</string>
+
+</resources>

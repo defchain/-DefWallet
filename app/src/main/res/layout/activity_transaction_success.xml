@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_transaction_record"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_transaction_success"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/titlebarcolor"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/transaction_record"
+            android:textColor="@color/white"
+            android:textSize="@dimen/toolbar_text_size" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/toolbar_height"
+        android:background="@color/titlebarcolor">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="14dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_dialog">
+
+                <TextView
+                    android:id="@+id/tv_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="19dp"
+                    android:textColor="@color/titlebarcolor"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_transaction_success"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_value"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/transaction_success"
+                    android:textColor="@color/bottom_gray"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/tv_transaction_success"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@color/button_gray" />
+
+                <!--from-->
+                <RelativeLayout
+                    android:id="@+id/rl_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="63dp"
+                    android:layout_below="@+id/line1"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/from"
+                        android:textColor="@color/bottom_gray"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_from_address"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="right"
+                        android:textColor="@color/titlebarcolor"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+                <!--to-->
+                <RelativeLayout
+                    android:id="@+id/rl_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="63dp"
+                    android:layout_below="@+id/rl_from"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/to"
+                        android:textColor="@color/bottom_gray"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_to_address"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="right"
+                        android:textColor="@color/titlebarcolor"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/rl_to"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/button_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_transaction_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="144dp"
+                    android:layout_below="@+id/line2"
+                    android:padding="13dp">
+                    <!--gas fee-->
+                    <TextView
+                        android:id="@+id/tv_gas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gas_fee"
+                        android:textColor="@color/bottom_gray"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_gas_fee"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="right"
+                        android:textColor="@color/titlebarcolor"
+                        android:textSize="13sp" />
+                    <!--memo-->
+                    <TextView
+                        android:id="@+id/memo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_gas"
+                        android:layout_marginTop="13dp"
+                        android:text="@string/memo"
+                        android:textColor="@color/bottom_gray"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_memo"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/memo"
+                        android:gravity="right"
+                        android:textColor="@color/titlebarcolor"
+                        android:textSize="13sp" />
+
+                    <!--transaction time-->
+                    <TextView
+                        android:id="@+id/transaction_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/memo"
+                        android:layout_marginTop="13dp"
+                        android:text="@string/transaction_time"
+                        android:textColor="@color/bottom_gray"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_transaction_time"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/transaction_time"
+                        android:gravity="right"
+                        android:textColor="@color/titlebarcolor"
+                        android:textSize="13sp" />
+
+                    <!--order-->
+                    <TextView
+                        android:id="@+id/order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/transaction_time"
+                        android:layout_marginTop="13dp"
+                        android:text="@string/order"
+                        android:textColor="@color/bottom_gray"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_order"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/order"
+                        android:ellipsize="middle"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/titlebarcolor"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:id="@+id/line3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="13dp"
+                        android:background="@color/button_gray" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/img_qrcode"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@id/rl_transaction_desc"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="14dp"
+                    android:scaleType="fitXY" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_copy_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_qrcode"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="22dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/shape_button3">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1px"
+                        android:background="@drawable/shape_button1"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="21dp"
+                        android:paddingRight="21dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/copy_address"
+                        android:textColor="@color/bottom_gray"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

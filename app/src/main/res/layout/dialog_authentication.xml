@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="170dp"
+    android:background="@drawable/shape_dialog"
+    android:minHeight="170dp"
+    android:minWidth="260dp">
+
+    <TextView
+        android:id="@+id/tv_authentication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="@string/authentication"
+        android:textColor="@color/currency_name"
+        android:textSize="17sp" />
+
+
+    <TextView
+        android:id="@+id/tv_authentication_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_authentication"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:text="@string/authentication_password"
+        android:textColor="@color/bottom_gray" />
+
+    <EditText
+        android:id="@+id/edt_authentication"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_below="@+id/tv_authentication_hint"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/img_input_box_hotwifi"
+        android:hint="@string/authentication_hint"
+        android:textColorHint="@color/button_gray"
+        android:textCursorDrawable="@null"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/edt_authentication"
+        android:layout_marginTop="11dp"
+        android:background="@color/button_gray" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line">
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@color/button_gray" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/line1"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/button_gray" />
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/line1"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textColor="@color/bottom_gray" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
